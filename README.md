@@ -25,6 +25,41 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## راهنمای سریع
+
+### دستور اجرای پروژه
+
+```bash
+npm install
+npm run start:dev
+```
+
+### روش تست endpoint ها (curl یا Postman)
+
+- با curl:
+
+```bash
+curl http://localhost:3000/health
+```
+
+- با Postman:
+  - Method: `GET`
+  - URL: `http://localhost:3000/health`
+
+### پورت برنامه
+
+پورت پیش‌فرض `3000` است. اگر متغیر محیطی `PORT` مقداردهی شود، همان مقدار استفاده می‌شود.
+
+### GET /health و نمونه خروجی
+
+نمونه پاسخ:
+
+```json
+{
+  "status": "ok"
+}
+```
+
 ## Project setup
 
 ```bash
